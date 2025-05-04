@@ -112,6 +112,7 @@ def update(i: int) -> bool:
             if len(s) == 0:
                 # print("Failure", i)
                 return False
+            s = list(s)
             task = rd.sample(s, 1)[0]
             avail_tasks.remove(task)
             week[task] = p
